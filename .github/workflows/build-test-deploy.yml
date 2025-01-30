@@ -23,7 +23,7 @@ jobs:
         with:
           node-version: '18.x'
       - run: npm install --save-dev @next/eslint-plugin-next
-      - run: npm test -- --no-interactive
+      - run: npm test
 
   deploy:
     needs: test
